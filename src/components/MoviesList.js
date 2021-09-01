@@ -32,7 +32,7 @@ function MoviesList() {
     <>
       <h1>Movies List</h1>
       {movies.map((movie) => (
-        <div className="movie" id={movie.movie_id}>
+        <div className="movie" key={movie.movie_id}>
           ★ {movie.title} &nbsp;
           <button type="button" onClick={() => deleteMovie(movie.movie_id)}>
             x
